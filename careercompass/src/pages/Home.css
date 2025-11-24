@@ -1,0 +1,235 @@
+.home-container {
+  background: #f8fbff;
+  color: #222;
+}
+
+.hero {
+  background: #fff;
+  text-align: center;
+  padding: 5rem 1rem 4rem;
+  border-bottom: 8px solid #06b6d4;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1e3a8a;
+}
+.hero h1 .accent {
+  color: #06b6d4;
+}
+.hero p {
+  color: #555;
+  margin: 1rem auto 2rem;
+  max-width: 600px;
+  font-size: 1.1rem;
+}
+.hero .search-box {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 2px solid #1e3a8a;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.hero input {
+  flex: 1;
+  padding: 0.9rem;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+.hero button {
+  background: #06b6d4;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hero button:hover {
+  background: #0891b2;
+}
+.quick-prompts {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.quick-prompts button {
+  background: #eef2ff;
+  border: 1px solid #1e3a8a;
+  color: #1e3a8a;
+  border-radius: 9999px;
+  padding: 0.4rem 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.quick-prompts button:hover {
+  background: #1e3a8a;
+  color: white;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.features h2 {
+  color: #1e3a8a;
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 4px solid #06b6d4;
+  padding-bottom: 0.3rem;
+  display: inline-block;
+  max-width: 120%; 
+}
+
+.feature-grid {
+  display: grid;
+  gap: 2rem;
+  padding: 0 1.5rem; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #dff2f9;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-container {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.feature-card.indigo { border-top: 4px solid #1e3a8a; }
+.feature-card.cyan { border-top: 4px solid #06b6d4; }
+.feature-card.amber { border-top: 4px solid #f59e0b; }
+
+.resume-section, .interview-section {
+  background: white;
+  margin: 3rem 0;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  padding: 2.5rem;
+}
+.resume-content, .interview-content {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .resume-content, .interview-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.resume-text h2, .interview-text h2 {
+  color: #1e3a8a;
+  border-bottom: 4px solid #06b6d4;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+.resume-text button, .interview-text button {
+  background: #06b6d4;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.resume-text button:hover, .interview-text button:hover {
+  background: #0891b2;
+}
+.resume-preview, .interview-preview {
+  background: #eef2ff;
+  border-radius: 1rem;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.preview-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #1e3a8a;
+  opacity: 0.8;
+}
+
+.cta {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  border-radius: 1rem;
+  margin: 3rem 1rem;
+}
+.cta h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.cta button {
+  background: #06b6d4;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cta button:hover {
+  background: #0891b2;
+}
+
+.resume-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.resume-form input[type="file"] {
+  padding: 0.6rem;
+  border: 2px dashed #06b6d4;
+  border-radius: 0.5rem;
+  background: #f8fbff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resume-form input[type="file"]:hover {
+  background: #e0f7fa;
+}
+
+.resume-form button {
+  align-self: start;
+}
