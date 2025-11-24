@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import interview from "../assets/interview1.png";
+import templateModern from "../assets/modern.png";
+import templateClassic from "../assets/minimalist.png";
+import templateTech from "../assets/professional.png";
 import {
   Info,
   Link,
@@ -204,7 +208,7 @@ function Home() {
       </section>
 
       {/* RESUME BUILDER */}
-      <section className="resume-section">
+      {/* <section className="resume-section">
         <div className="resume-content">
           <div className="resume-text">
             <h2>Resume Builder</h2>
@@ -232,14 +236,89 @@ function Home() {
             <p>*Preview of Professional Template*</p>
           </div>
         </div>
+      </section> */}
+
+      {/* RESUME BUILDER: FIX 1 - Implement Template Gallery */}
+      <section className="resume-section">
+        <div className="resume-content">
+          <div className="resume-text">
+            <h2>Resume Builder</h2>
+            <p>
+              Craft a polished, ATS-friendly resume in minutes. Use AI-driven
+              content suggestions to land your next interview.
+            </p>
+            <ul>
+              <li>
+                <CheckCircle className="icon" /> ATS optimization built in.
+              </li>
+              <li>
+                <CheckCircle className="icon" /> Dynamic, job-specific phrasing.
+              </li>
+              <li>
+                <CheckCircle className="icon" /> Export to PDF & DOCX formats.
+              </li>
+            </ul>
+            <button type="button" onClick={() => handleQuickPrompt("Redirect to Resume Builder")}>
+              Start Building Your Resume
+            </button>
+          </div>
+
+          {/* Template Gallery Implementation */}
+          <div className="resume-preview-gallery">
+            <div className="template-row">
+              <img src={templateClassic} alt="Classic Template Preview" className="small-template-img" />
+              <img src={templateTech} alt="Technical Template Preview" className="small-template-img" />
+              <img src={templateModern} alt="Professional Template Preview" className="small-template-img" />
+            </div>
+            <p className="gallery-caption">Choose from multiple ATS-friendly designs.</p>
+          </div>
+        </div>
       </section>
 
       {/* INTERVIEW PREP */}
+      {/* <section className="interview-section">
+        <div className="interview-content">
+          <div className="interview-preview">
+            <img
+              src={interview}
+              alt="AI Interview Coaching Dashboard in action"
+              className="preview-image-fit"
+            />
+          </div>
+          <div className="../../assets/interview.png">
+            <h2>Interview Prep Simulator</h2>
+            <p>
+              Practice real-world questions and receive instant AI-driven feedback
+              to sharpen your confidence.
+            </p>
+            <ul>
+              <li>
+                <CheckCircle className="icon" /> Real-time feedback on tone and
+                clarity.
+              </li>
+              <li>
+                <CheckCircle className="icon" /> Industry-specific question bank.
+              </li>
+              <li>
+                <CheckCircle className="icon" /> Improve your STAR method answers.
+              </li>
+            </ul>
+            <button type="button" onClick={() => handleQuickPrompt("Redirect to Interview Prep")}>
+              Practice Interviews Now
+            </button>
+          </div>
+        </div>
+      </section> */}
+
+      {/* INTERVIEW PREP: FIX 2 - Corrected structure (removed extra div) */}
       <section className="interview-section">
         <div className="interview-content">
           <div className="interview-preview">
-            <Users className="preview-icon" />
-            <p>*Mock Interview Dashboard*</p>
+            <img
+              src={interview}
+              alt="AI Interview Coaching Dashboard in action"
+              className="preview-image-fit"
+            />
           </div>
           <div className="interview-text">
             <h2>Interview Prep Simulator</h2>
